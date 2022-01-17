@@ -1,0 +1,63 @@
+@import "../CSS/global.css";
+
+/* header */
+.header-bg {
+  margin: 0 0 60px;
+  background: linear-gradient(90deg, green 70%, rgb(201, 235, 9) 100%, blue);
+}
+.header {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+
+.header ul {
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.header ul li a {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 15px;
+  transition: all 0.5s;
+}
+
+.header ul li a:hover {
+  transform: scale(1.2);
+  color: rgb(202, 221, 35);
+}
+
+h1 {
+  color: rgb(3, 30, 53);
+  justify-self: center;
+  text-align: center;
+}
+
+.header p {
+  text-transform: lowercase;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8;
+}
+
+/*-------- Figure --------*/
+figure {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  object-fit:fill;
+  border-radius: 4px;
+  border: 1px solid #555;
+}
