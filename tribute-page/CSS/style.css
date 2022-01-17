@@ -15,6 +15,11 @@
   gap: 200px;
 }
 
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .header ul {
   display: flex;
@@ -80,4 +85,25 @@ h2 {
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.6;
+  margin: 0 0 40px;
+}
+
+/*-----time line-----*/
+main {
+  background: #eee;
+  padding: 40px 20px;
+}
+
+.time-line {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.time-line ul {
+  display: grid;
+  gap: 20px;
+}
+
+.time-line ul li {
+  list-style: circle;
 }
