@@ -3,9 +3,10 @@ body {
   box-sizing: border-box;
   background: url(../img/goran-ivos-iacpoKgpBAM-unsplash.jpg) fixed center;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 800px;
   color: #eee;
-  font-family: sans-serif;
+  font-family: "Poppins";
+  overflow: hidden;
 }
 
 h1,
@@ -26,7 +27,7 @@ main {
   z-index: 0;
 }
 
-header {
+section {
   position: relative;
   z-index: 2;
   text-align: center;
@@ -34,11 +35,19 @@ header {
 }
 
 #title {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  transition: transform 2s;
 }
 
-p {
-  font-size: 1.125rem;
-  font-style: italic;
-  line-height: 2;
+#title:hover {
+  transform: skewX(200deg);
 }
+
+#description {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 2.5;
+  margin-bottom: 15px;
+}
+
+@import "./form.css";

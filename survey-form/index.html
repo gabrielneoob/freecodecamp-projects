@@ -6,14 +6,98 @@
     <meta name="description" content="Survey form">
     <title>Survey Form</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <main> 
     </main>
-   <header>
-      <h1 id="title">freeCodeCamp Survey Form Project</h1>
+   <section>
+      <h1 id="title">FreeCodeCamp Survey Form Project</h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p>
-    </header>
+
+      <form action="./" id="survey-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" placeholder="Enter you E-mail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age (Optional)</label>
+          <input type="number" id="age" name="age" min="10" max="60">
+        </div>
+
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select name="role" id="role" required>
+            <option value="disable" selected disabled>Select Current Role</option>
+            <option value="student">Student</option>
+            <option value="full-time">Full time job</option>
+            <option value="full-leaner">Full time leaner</option>
+            <option value="notsay">Prefet not to say</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <input type="radio" name="options" id="definitely">
+          <label for="definitely">Definitely</label>
+
+          <input type="radio" name="options" id="maybe">
+          <label for="maybe">Maybe</label>
+
+          <input type="radio" name="options" id="notsure">
+          <label for="notsure">Not sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select name="favorite" id="favorite" required>
+            <option value="disable" selected disabled>Select an Option</option>
+            <option value="challenge">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <input type="checkbox" id="front-end">
+          <label for="front-end">Front-End Projects</label>
+
+          <input type="checkbox" id="back-end">
+          <label for="back-end">Back-End Projects</label>
+
+          <input type="checkbox" id="git">
+          <label for="git">Git & GitHub</label>
+
+          <input type="checkbox" id="typescript">
+          <label for="typescript">Typescript Projects</label>
+
+          <input type="checkbox" id="dom">
+          <label for="dom">DOM Projects</label>
+        </div>
+
+        <div class="form-group">
+          <label for="suggestions">Any comments or suggestions?</label>
+          <textarea name="suggestions" id="suggestions"></textarea>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
