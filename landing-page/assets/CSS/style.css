@@ -265,3 +265,35 @@ iframe {
     width: 300px;
   }
 }
+
+/* FOOTER */
+
+.footer-bg {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#footer ul {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+#footer ul li a {
+  color: inherit;
+}
+
+#footer ul li {
+  transition: transform 0.5s;
+}
+
+#footer ul li:hover {
+  transform: translate(5px);
+}
+
+#footer p {
+  text-align: end;
+  font-size: 0.8rem;
+}
