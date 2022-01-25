@@ -188,3 +188,57 @@ iframe {
 }
 
 /* PRICES */
+#prices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 90px;
+}
+
+.prices-card {
+  flex: 1;
+  text-align: center;
+  border: 1.6px solid #000;
+  border-radius: 5px;
+  padding: 0px 0 10px;
+  display: grid;
+  gap: 15px;
+  justify-items: center;
+  transition: transform 0.2s;
+}
+
+.prices-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 3px 5px #777;
+}
+
+.prices-card h2 {
+  font-size: 1rem;
+  background: #ccc;
+  padding: 5px 0;
+  width: 100%;
+  font-weight: 600;
+}
+
+.prices-card h3 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.prices-card ul li {
+  margin-bottom: 8px;
+}
+
+.prices-card a {
+  text-transform: uppercase;
+  background: var(--cor-bt);
+  color: #000;
+  padding: 6px 20px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.prices-card a:hover {
+  background: rgb(211, 191, 65);
+}
