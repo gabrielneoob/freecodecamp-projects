@@ -37,6 +37,8 @@ code {
 #nav-bar {
   padding: 15px 0;
   border-right: 3px solid rgba(0, 22, 22, 0.4);
+  position: fixed;
+  height: 100%;
 }
 
 #nav-bar ul {
@@ -59,6 +61,12 @@ code {
 
 /* MAIN*/
 
+#main-doc {
+  padding: 20px;
+  grid-column: 2;
+  z-index: 2;
+}
+
 #main-doc p {
   margin: 20px 0;
   margin-left: 8px;
@@ -68,6 +76,8 @@ code {
 }
 
 #main-doc ul {
+  display: grid;
+  gap: 15px;
   margin: 1rem 0;
   padding: 0 0 0 40px;
   color: #4d4e53;
@@ -75,8 +85,4 @@ code {
 
 #main-doc li {
   list-style: inside;
-}
-
-#main-doc {
-  padding: 20px;
 }
