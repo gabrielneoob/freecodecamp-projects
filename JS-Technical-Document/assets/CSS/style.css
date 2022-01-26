@@ -17,6 +17,16 @@ header {
   gap: 20px;
 }
 
+code {
+  background: #f7f7f7;
+  color: #4d4e53;
+  font-size: 0.8rem;
+  margin-left: 20px;
+  padding: 15px;
+  margin: 20px;
+  display: block;
+}
+
 /* NAV BAR*/
 
 #nav-bar header {
