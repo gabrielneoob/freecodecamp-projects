@@ -86,3 +86,7 @@ code {
 #main-doc li {
   list-style: inside;
 }
+
+#data-types ul {
+  gap: 5px;
+}
