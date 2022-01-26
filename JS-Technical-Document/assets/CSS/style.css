@@ -45,17 +45,27 @@ code {
   display: grid;
 }
 
+#nav-bar ul li {
+  border: 1px solid #666;
+  border-right: none;
+}
+
 #nav-bar a {
   color: #4d4e53;
-  border: 0.5px solid rgba(0, 22, 22, 0.4);
   width: 100%;
   display: block;
   padding: 12px 29px;
   border-right: none;
   border-left: none;
+  transition: transform 0.2s;
 }
 
-#nav-bar a:last-child {
+#nav-bar a:hover {
+  transform: translate(10px);
+  font-weight: bold;
+}
+
+#nav-bar li:last-child {
   border-bottom: none;
 }
 
